@@ -114,6 +114,34 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
     <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.html5.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.print.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            LoadComboConceptos();
+        });
+        function LoadComboConceptos(){
+          $("#cmbProveedor").select2({
+
+              ajax: {
+                  url: "../Network/Combos/Proveedores.php",
+                  type: "post",
+                  dataType: 'json',
+                  delay: 250,
+                  data: function (params) {
+                      return {
+                          searchTerm: params.term // search term
+                      };
+                  },
+                  processResults: function (response) {
+                      return {
+                          results: response
+                      };
+                  },
+                  cache: true
+              }
+          });
+        }
+    </script>
+
     <script>
         function cargar_tabla(){
             $('#lista_modulos').dataTable().fnDestroy();
