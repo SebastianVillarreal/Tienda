@@ -22,7 +22,7 @@
 
 
 		function Create(){
-	        $call = "CALL InsertPago(:pIdProveedor, :pUsuario, :pTotal, :pSucursal)";
+	        $call = "CALL InsertPago(:pIdProveedor, :pUsuario, :pTotal, :pSucursal, :pFecha)";
 	        $stmt = $this->conn->prepare($call);
 	        // sanitize
 	        $this->nombre=htmlspecialchars(strip_tags($this->nombre));
@@ -31,6 +31,7 @@
 	        $stmt->bindParam(":pUsuario", $this->usuario);
 	        $stmt->bindParam(":pTotal", $this->total);
 	        $stmt->bindParam(":pSucursal", $this->sucursal);
+	        $stmt->bindParam(":pFecha", $this->fecha);
 
 	        if($stmt->execute()){
             	return true;

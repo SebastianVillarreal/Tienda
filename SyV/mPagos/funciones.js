@@ -1,4 +1,5 @@
 function InsertGasto(monto, proveedor) {
+    var fecha = $('#txtFecha').val();
     var url = "../Network/Pagos/Insert.php";
     fetch(url,{
         method: 'POST',
@@ -9,7 +10,8 @@ function InsertGasto(monto, proveedor) {
         //body: $('#frmDatos').serialize()
         body: JSON.stringify({
             "proveedor": proveedor,
-            "total": monto
+            "total": monto,
+            "fecha": fecha
         })
     })
     .then(function(response){

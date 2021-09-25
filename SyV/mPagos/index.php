@@ -41,6 +41,10 @@
                                     <label for="">Monto</label>
                                     <input type="text" class="form-control" name="" id="txtMonto" value="">
                                   </div>
+                                  <div class="col-lg-4">
+                                      <label>Fecha</label>
+                                      <input type="date" class="form-control" id="txtFecha" name="">
+                                  </div>
                                 </div>
                               </form>
                             </div>

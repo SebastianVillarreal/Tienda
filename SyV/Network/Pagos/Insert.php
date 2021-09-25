@@ -38,6 +38,7 @@ $data = json_decode(file_get_contents("php://input"));
 $pago->proveedor = $data->proveedor;
 $pago->usuario = 1;
 $pago->total = $data->total;
+$pago->fecha = $data->fecha;
 $pago->sucursal = 1;
 
 
