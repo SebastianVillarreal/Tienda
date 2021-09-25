@@ -40,6 +40,15 @@
 	        // execute query
   		}
 
+  		function read(){
+	        $call = "CALL GetPagos()";
+	        $stmt = $this->conn->prepare($call);
+	        // bind values
+	        //$stmt->bindParam(":pIdCliente", $this->id_cliente);
+	        $stmt->execute();
+	        return $stmt;
+      	}
+
 
 	}
 

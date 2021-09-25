@@ -68,20 +68,10 @@
                                         <tr>
                                             <th scope="col">#</th>
                                             <th scope="col">Nombre</th>
-                                            <th scope="col">Descripcion</th>
-                                            <th scope="col">Editar</th>
-                                            <th scope="col">Eliminar</th>
+                                            <th scope="col">Total</th>
+                                            <th scope="col">Fecha</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">Nombre</th>
-                                            <th scope="col">Descripcion</th>
-                                            <th scope="col">Editar</th>
-                                            <th scope="col">Eliminar</th>
-                                        </tr>
-                                    </tbody>
                                 </table>
                             </div>
                             </div>
@@ -186,15 +176,14 @@
                 ],
                 "ajax": {
                     "type": "POST",
-                    "url": "tabla.php",
+                    "url": "../Network/Pagos/Get.php",
                     "dataSrc": ""
                 },
                 "columns": [
-                    { "data": "#", "width":"3%"},
+                    { "data": "Id", "width":"3%"},
                     { "data": "Nombre" },
-                    { "data": "Descripcion" },
-                    { "data": "Editar", "width":"3%" },
-                    { "data": "Eliminar", "width":"3%" }
+                    { "data": "Total" },
+                    { "data": "Fecha" }
                 ]
             });
         }
