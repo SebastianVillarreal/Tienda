@@ -1,4 +1,4 @@
-function InsertVenta(monto) {
+function InsertVenta(monto, fecha) {
     var url = "../Network/Ventas/Insert.php";
     fetch(url,{
         method: 'POST',
@@ -8,7 +8,8 @@ function InsertVenta(monto) {
 
         //body: $('#frmDatos').serialize()
         body: JSON.stringify({
-            "total": monto
+            "total": monto,
+            "fecha": fecha
         })
     })
     .then(function(response){

@@ -34,6 +34,10 @@
                                     <label for="">Monto</label>
                                     <input type="text" class="form-control" name="" id="txtMonto" value="">
                                   </div>
+                                  <div class="col-lg-4">
+                                    <label for="">Fecha</label>
+                                    <input type="date" class="form-control" name="" id="txtFecha" value="">
+                                  </div>
                                 </div>
                               </form>
                             </div>
@@ -41,7 +45,7 @@
                         </div>
                         <!-- /.card-body -->
                         <div class="card-footer">
-                            <button onclick="InsertVenta($('#txtMonto').val())" class="btn btn-warning float-right">Guardar</button>
+                            <button onclick="InsertVenta($('#txtMonto').val(), $('#txtFecha').val())" class="btn btn-warning float-right">Guardar</button>
                         </div>
                     </form>
                 </div>

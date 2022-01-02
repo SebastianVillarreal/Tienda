@@ -28,6 +28,7 @@ $venta = new Ventas($db);
   	$hora = date('H:i:s');
 // get posted data
 $id_usuario = $_SESSION['gepex_id'];
+
 // $nombre = $_POST['nombre'];
 // $direccion = $_POST['direccion'];
 
@@ -36,6 +37,7 @@ $data = json_decode(file_get_contents("php://input"));
 
 // set product property values
 $venta->total = $data->total;
+$venta->fecha = $data->fecha;
 $venta->usuario = 1;
 
 // create the product

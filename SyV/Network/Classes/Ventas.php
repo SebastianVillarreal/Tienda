@@ -21,13 +21,14 @@
       }
 
 		function Create(){
-	        $call = "CALL InsertVenta(:pTotal, :pUsuario)";
+	        $call = "CALL InsertVenta(:pTotal, :pUsuario, :pFecha)";
 	        $stmt = $this->conn->prepare($call);
 	        // sanitize
 	        $this->nombre=htmlspecialchars(strip_tags($this->nombre));
 	        // bind values
 	        $stmt->bindParam(":pTotal", $this->total);
 	        $stmt->bindParam(":pUsuario", $this->usuario);
+	        $stmt->bindParam(":pFecha", $this->fecha);
 
 	        if($stmt->execute()){
             	return true;
