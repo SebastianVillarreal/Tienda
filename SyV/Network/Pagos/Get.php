@@ -12,13 +12,13 @@
   session_name("sysApp");
   session_start();
 
-  $database = new Database();
-  $db = $database->getConnection();
+  // $database = new Database();
+  // $db = $database->getConnection();
 
-  $obra = new Pagos($db);
- 	date_default_timezone_set('America/Monterrey');
-  $fecha = date('Y-m-d');
-  $hora = date('H:i:s');
+  // $obra = new Pagos($db);
+ 	// date_default_timezone_set('America/Monterrey');
+  // $fecha = date('Y-m-d');
+  // $hora = date('H:i:s');
   // get posted data
   //$id_usuario = $_SESSION['gepex_id'];
   //$nombre = $_POST['nombre'];
