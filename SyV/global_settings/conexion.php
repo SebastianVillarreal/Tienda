@@ -1,7 +1,7 @@
 <?php
     $bd_host = "104.254.247.128";
     $bd_usuario = "svillarreal";
-    $bd_password = "abc1238f47";
+    $bd_password = "gpeex2022!";
     $bd_base = "SaleVale";
 
     $conexion = mysqli_connect($bd_host,$bd_usuario,$bd_password) ;

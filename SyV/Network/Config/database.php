@@ -5,7 +5,7 @@ class Database{
     private $host = "104.254.247.128";
     private $db_name = "SaleVale";
     private $username = "svillarreal";
-    private $password = "abc1238f47";
+    private $password = "gpeex2022!";
     public $conn;
 
     // get the database connection
