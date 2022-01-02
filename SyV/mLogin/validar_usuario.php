@@ -20,6 +20,7 @@ $consulta_usuario = "SELECT usuarios.id,
 					AND usuarios.pass='$p_contra'
 					AND usuarios.activo='1' 
 					AND personas.activo='1'";
+					echo "$consulta_usuario";
 
 $usuario = mysqli_query($conexion, $consulta_usuario);
 $row_usuario = mysqli_fetch_array($usuario);
