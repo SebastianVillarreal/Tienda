@@ -12,8 +12,8 @@
   session_name("sysApp");
   session_start();
 
-  // $database = new Database();
-  // $db = $database->getConnection();
+   $database = new Database();
+   $db = $database->getConnection();
 
   // $obra = new Pagos($db);
  	// date_default_timezone_set('America/Monterrey');
