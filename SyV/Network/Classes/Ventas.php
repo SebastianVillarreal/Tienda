@@ -39,6 +39,17 @@
   		}
 
 
+  		function Get(){
+	        $query = "CALL GetVentas()";
+	        $stmt = $this->conn->prepare( $query );
+	        //$stmt->bindParam(":IdUsuario", $this->id_usuario);
+	        //$stmt->bindParam(':id_usuario', $this->id_usuario);
+	        //$stmt->bindParam(':company', $this->id_usuario);
+	        $stmt->execute();
+        	return $stmt;
+    	}
+
+
 	}
 
  ?>

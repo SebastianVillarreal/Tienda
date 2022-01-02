@@ -64,19 +64,15 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">#</th>
-                                            <th scope="col">Nombre</th>
-                                            <th scope="col">Descripcion</th>
-                                            <th scope="col">Editar</th>
-                                            <th scope="col">Eliminar</th>
+                                            <th scope="col">Fecha</th>
+                                            <th scope="col">Monto</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <th scope="col">#</th>
-                                            <th scope="col">Nombre</th>
-                                            <th scope="col">Descripcion</th>
-                                            <th scope="col">Editar</th>
-                                            <th scope="col">Eliminar</th>
+                                            <th scope="col">Fecha</th>
+                                            <th scope="col">Monto</th>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -161,9 +157,7 @@
                 "columns": [
                     { "data": "#", "width":"3%"},
                     { "data": "Nombre" },
-                    { "data": "Descripcion" },
-                    { "data": "Editar", "width":"3%" },
-                    { "data": "Eliminar", "width":"3%" }
+                    { "data": "Descripcion" }
                 ]
             });
         }
