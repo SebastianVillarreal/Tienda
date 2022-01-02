@@ -8,12 +8,14 @@
   include_once '../config/database.php';
 
   // instantiate product object
-  include_once '../Classes/Pagos.php';
-  session_name("sysApp");
-  session_start();
+  // include_once '../Classes/Pagos.php';
+  // session_name("sysApp");
+  // session_start();
 
-   $database = new Database();
-   $db = $database->getConnection();
+  //  $database = new Database();
+  //  $db = $database->getConnection();
+
+
 
   // $obra = new Pagos($db);
  	// date_default_timezone_set('America/Monterrey');
