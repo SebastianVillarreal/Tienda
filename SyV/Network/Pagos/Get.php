@@ -43,7 +43,6 @@
       extract($row);
       $obra_item = array(
         "Id" => $Id,
-        "Fecha" => $Fecha,
         "Total" => $Total,
         "Nombre" => $Nombre
       );
