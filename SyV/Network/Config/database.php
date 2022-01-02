@@ -8,9 +8,9 @@ class Database{
     private $password = "gpeex2022!";
     public $conn;
 
-    // $user = "svillarreal";
-    // $password = "gpeex2022!";
-    // $database = "example_database";
+    $user = "svillarreal";
+    $password_b = "gpeex2022!";
+    $database = "example_database";
     // $table = "proveedores";
     // public function getConnection(){
     //     try {
@@ -33,7 +33,7 @@ class Database{
 
         $this->conn = null;
         try{
-            $this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->db_name, $this->username, $this->password);
+            $this->conn = new new PDO("mysql:host=104.254.247.128;dbname=$database", $user, $password_b);
             //$this->conn->exec("set names utf8");
         }catch(PDOException $exception){
             echo "Connection error: " . $exception->getMessage();
