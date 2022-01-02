@@ -30,7 +30,7 @@
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
-      <p class="login-box-msg">Ingresa las credenciales</p>
+      <p class="login-box-msg">Ingresa las </p>
 
       <form id="form_datos" method="POST">
         <div class="input-group mb-3">
