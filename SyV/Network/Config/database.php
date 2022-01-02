@@ -2,7 +2,7 @@
 class Database{
 
     // specify your own database credentials
-    private $host = "104.254.247.128";
+    private $host = "localhost";
     private $db_name = "SaleVale";
     private $username = "svillarreal";
     private $password = "gpeex2022!";
