@@ -12,7 +12,12 @@
   // session_name("sysApp");
   // session_start();
 
-  $database = new Database();
+   try {
+     $database = new Database();
+   } catch (Exception $e) {
+     echo $e;
+   }
+  
    // //$db = $database->getConnection();
 
 
