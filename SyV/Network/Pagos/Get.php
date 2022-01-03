@@ -16,6 +16,7 @@
      $database = new Database();
    } catch (Exception $e) {
      echo $e;
+     print_r($e);
    }
   
    // //$db = $database->getConnection();
