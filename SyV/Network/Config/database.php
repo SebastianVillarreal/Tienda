@@ -1,5 +1,5 @@
 <?php
-class PruebasPruebas{
+public class PruebasPruebas{
 
     // specify your own database credentials
     // private $host = "104.254.247.128";
