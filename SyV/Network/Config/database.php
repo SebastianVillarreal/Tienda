@@ -25,20 +25,20 @@ class Database{
     
 
     // get the database connection
-    public function getConnection(){
+    // public function getConnection(){
 
-        $this->conn = null;
-        try{    
-            $this->conn = new PDO("mysql:host=104.254.247.128;dbname=SaleVale", "svillarreal", "gpeex2022!");
+    //     $this->conn = null;
+    //     try{    
+    //         $this->conn = new PDO("mysql:host=104.254.247.128;dbname=SaleVale", "svillarreal", "gpeex2022!");
 
-             //$this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->db_name, $this->username, $this->password);
-            $this->conn->exec("set names utf8");
-        }catch(PDOException $exception){
-            echo "Connection error: " . $exception->getMessage();
-            print "Error!: " . $exception->getMessage() . "<br/>";
-        }
+    //          //$this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->db_name, $this->username, $this->password);
+    //         $this->conn->exec("set names utf8");
+    //     }catch(PDOException $exception){
+    //         echo "Connection error: " . $exception->getMessage();
+    //         print "Error!: " . $exception->getMessage() . "<br/>";
+    //     }
 
-        return $this->conn;
-    }
+    //     return $this->conn;
+    // }
 }
 ?>
