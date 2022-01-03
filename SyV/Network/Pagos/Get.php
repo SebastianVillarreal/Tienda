@@ -7,7 +7,7 @@
   ini_set("display_errors","On");
 
   // get database connection
-  include_once '../config/database.php';
+  include_once '../Config/database.php';
 
   // instantiate product object
    include_once '../Classes/Pagos.php';
