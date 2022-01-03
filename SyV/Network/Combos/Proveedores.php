@@ -1,8 +1,11 @@
 <?php
 
 // required headers
+error_reporting(E_ALL);
+  ini_set("display_errors","On");
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
+
 // session_name("sysAdMision");
 // session_start();
 
