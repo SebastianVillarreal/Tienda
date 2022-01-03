@@ -1,5 +1,5 @@
 <?php
-    $bd_host = "localhost";
+    $bd_host = "104.254.247.128";
     $bd_usuario = "svillarreal";
     $bd_password = "gpeex2022!";
     $bd_base = "SaleVale";

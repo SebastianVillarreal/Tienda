@@ -2,15 +2,11 @@
 class Database{
 
     // specify your own database credentials
-    private $host = "localhost";
+    private $host = "104.254.247.128";
     private $db_name = "SaleVale";
     private $username = "svillarreal";
     private $password = "gpeex2022!";
     public $conn;
-
-    $user = "svillarreal";
-    $password_b = "gpeex2022!";
-    $database = "example_database";
     // $table = "proveedores";
     // public function getConnection(){
     //     try {
@@ -32,9 +28,11 @@ class Database{
     public function getConnection(){
 
         $this->conn = null;
-        try{
-            $this->conn = new new PDO("mysql:host=104.254.247.128;dbname=$database", $user, $password_b);
-            //$this->conn->exec("set names utf8");
+        try{    
+            $this->conn = new PDO("mysql:host=104.254.247.128;dbname=SaleVale", "svillarreal", "gpeex2022!");
+
+             //$this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->db_name, $this->username, $this->password);
+            $this->conn->exec("set names utf8");
         }catch(PDOException $exception){
             echo "Connection error: " . $exception->getMessage();
         }
