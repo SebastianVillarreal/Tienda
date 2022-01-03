@@ -13,7 +13,7 @@
    include_once '../Classes/Pagos.php';
   // session_name("sysApp");
   // session_start();
-  $database = new PruebasPruebas();
+  $database = new Database();
   
    $db = $database->getConnection();
 
