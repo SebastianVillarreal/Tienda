@@ -1,11 +1,11 @@
 <?php
-class Database{
+class PruebasPruebas{
 
     // specify your own database credentials
-    private $host = "104.254.247.128";
-    private $db_name = "SaleVale";
-    private $username = "svillarreal";
-    private $password = "gpeex2022!";
+    // private $host = "104.254.247.128";
+    // private $db_name = "SaleVale";
+    // private $username = "svillarreal";
+    // private $password = "gpeex2022!";
     //public $conn;
     // $table = "proveedores";
     // public function getConnection(){

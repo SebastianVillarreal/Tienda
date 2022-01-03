@@ -13,7 +13,7 @@
   // session_start();
 
    try {
-     $database = new Database();
+     $database = new PruebasPruebas();
    } catch (Exception $e) {
      echo $e;
      print_r($e);
