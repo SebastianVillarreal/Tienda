@@ -6,7 +6,7 @@ class Database{
     private $db_name = "SaleVale";
     private $username = "svillarreal";
     private $password = "gpeex2022!";
-    public $conn;
+    //public $conn;
     // $table = "proveedores";
     // public function getConnection(){
     //     try {
