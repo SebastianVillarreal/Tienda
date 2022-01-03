@@ -13,19 +13,13 @@
    include_once '../Classes/Pagos.php';
   // session_name("sysApp");
   // session_start();
-
-   try {
-     $database = new PruebasPruebas();
-   } catch (Exception $e) {
-     echo $e;
-     print_r($e);
-   }
+  $database = new PruebasPruebas();
   
-   // //$db = $database->getConnection();
+   $db = $database->getConnection();
 
 
 
-   // $obra = new Pagos($db);
+  $obra = new Pagos($db);
  	// date_default_timezone_set('America/Monterrey');
   // $fecha = date('Y-m-d');
   // $hora = date('H:i:s');
@@ -34,32 +28,32 @@
   // $nombre = $_POST['nombre'];
   // $direccion = $_POST['direccion'];
 
-  // $data = json_decode(file_get_contents("php://input"));
+  $data = json_decode(file_get_contents("php://input"));
 
-  // // set product property values
-  // //$obra->nombre = $data->nombre;
-  // //$obra->direccion = $data->direccion;
-  // //$obra->id_usuario = $id_usuario;
+  // set product property values
+  //$obra->nombre = $data->nombre;
+  //$obra->direccion = $data->direccion;
+  //$obra->id_usuario = $id_usuario;
 
-  // $stmt = $obra->read();
-  // $num = $stmt->rowCount();
+  $stmt = $obra->read();
+  $num = $stmt->rowCount();
 
-  // $obras_arr=array();
-  // if($num > 0){
-  //   while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-  //     // extract row
-  //     // this will make $row['name'] to
-  //     // just $name only
-  //     extract($row);
-  //     $obra_item = array(
-  //       "Id" => $Id,
-  //       "Total" => $Total,
-  //       "Nombre" => $Nombre,
-  //       "Fecha" => $Fecha
-  //     );
-  //     array_push($obras_arr, $obra_item);
-  //   }
-  //   //echo json_encode($obras_arr);
-  // }
-  // echo json_encode($obras_arr);
+  $obras_arr=array();
+  if($num > 0){
+    while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+      // extract row
+      // this will make $row['name'] to
+      // just $name only
+      extract($row);
+      $obra_item = array(
+        "Id" => $Id,
+        "Total" => $Total,
+        "Nombre" => $Nombre,
+        "Fecha" => $Fecha
+      );
+      array_push($obras_arr, $obra_item);
+    }
+    //echo json_encode($obras_arr);
+  }
+  echo json_encode($obras_arr);
  ?>
