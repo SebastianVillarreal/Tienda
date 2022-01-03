@@ -12,7 +12,7 @@
   // session_name("sysApp");
   // session_start();
 
-  //$database = new Database();
+  $database = new Database();
    // //$db = $database->getConnection();
 
 
