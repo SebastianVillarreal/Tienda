@@ -11,7 +11,7 @@ header("Content-Type: application/json; charset=UTF-8");
 
 
     // get database connection
-    include_once '../config/database.php';
+    include_once '../Config/database.php';
 
     // instantiate product object
     include_once '../Classes/Proveedores.php';
